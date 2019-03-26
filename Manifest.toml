@@ -11,15 +11,15 @@ version = "0.5.3"
 
 [[CodeTracking]]
 deps = ["InteractiveUtils", "Test", "UUIDs"]
-git-tree-sha1 = "2c46bc2429c88b43d80caf53151f22b85ba5a4b2"
+git-tree-sha1 = "7e19dccd5667e0a8d9327ac76966977dbc0df85f"
 uuid = "da1fd8a2-8d9e-5ec2-8556-3022fb5608a2"
-version = "0.3.4"
+version = "0.5.0"
 
 [[Compat]]
 deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
-git-tree-sha1 = "195a3ffcb8b0762684b6821de18f83a16455c6ea"
+git-tree-sha1 = "84aa74986c5b9b898b0d1acaf3258741ee64754f"
 uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
-version = "2.0.0"
+version = "2.1.0"
 
 [[Coverage]]
 deps = ["HTTP", "JSON", "LibGit2", "MbedTLS", "Pkg", "Test"]
@@ -70,6 +70,12 @@ git-tree-sha1 = "1f7a25b53ec67f5e9422f1f551ee216503f4a0fa"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.20.0"
 
+[[JuliaInterpreter]]
+deps = ["CodeTracking", "Dates", "Distributed", "InteractiveUtils", "Random", "SHA", "Test", "UUIDs"]
+git-tree-sha1 = "126d66c97171e676c3446f643ea159966d3ab10b"
+uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
+version = "0.3.2"
+
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
 git-tree-sha1 = "aec38c7e7f255a678af22651c74100e3cd39ea20"
@@ -94,6 +100,12 @@ version = "0.1.0"
 
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
+
+[[LoweredCodeUtils]]
+deps = ["JuliaInterpreter", "Test"]
+git-tree-sha1 = "51e3d512848f96e0017338e1e7e3485ee2730e6e"
+uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
+version = "0.3.0"
 
 [[MacroTools]]
 deps = ["Compat"]
@@ -137,10 +149,10 @@ deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
 [[Revise]]
-deps = ["CodeTracking", "Distributed", "FileWatching", "InteractiveUtils", "LibGit2", "OrderedCollections", "Pkg", "REPL", "Random", "Test", "UUIDs", "Unicode"]
-git-tree-sha1 = "a47a47a35c794e0bcefe0f76bcb6469ec7ece7d7"
+deps = ["CodeTracking", "Distributed", "FileWatching", "InteractiveUtils", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Pkg", "REPL", "Random", "Test", "UUIDs", "Unicode"]
+git-tree-sha1 = "58cc98a8c1ef3a90e0208fd4e530af2e75d168e2"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "1.1.0"
+version = "2.0.2"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -173,3 +185,11 @@ uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [[Unicode]]
 uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+
+[[Utils]]
+deps = ["Lazy", "Test"]
+git-tree-sha1 = "307554e9da7e423fc79b54e74c595568ab4d9d20"
+repo-rev = "master"
+repo-url = "https://github.com/dionisos2/Utils.jl.git"
+uuid = "f82b7c1c-4f13-11e9-054f-f56080832a5c"
+version = "0.1.0"

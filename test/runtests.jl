@@ -1,6 +1,9 @@
 using Test
-import Canalyser
+using Canalyser
 
 
-@test 1==1
+tests = ["cipher_test.jl"]
 
+for test in tests
+  include(test)
+end

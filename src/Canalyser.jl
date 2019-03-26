@@ -1,13 +1,11 @@
 module Canalyser
 
-export cc
+export cc, Cipher, crypt, decrypt
 
 include("ciphers.jl")
 
-using .Ciphers
-
 function cc()
-    mapping = Dict("a"=>"b", "b"=>"c")
+    mapping = Dict('a'=>'b', 'b'=>'c')
     cipher = Cipher(mapping)
 
     println("s2")
