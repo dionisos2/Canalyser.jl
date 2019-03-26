@@ -1,3 +1,3 @@
 # Canalyser
-A really super package/software in julia
+A small project to learn julia. Under development.
 ## How to use
